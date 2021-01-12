@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#81c784"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/racelist_location"
+        app:layout_constraintTop_toTopOf="@+id/racelist_location">
+
+        <TextView
+            android:id="@+id/racelist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="Austrialian Grand Prix"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/racelist_racenumber"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/racelist_racenumber"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:text="10"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/racelist_circuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="13dp"
+            android:text="Albert Park Grand Prix Circuit"
+            app:layout_constraintStart_toEndOf="@+id/racelist_racenumber"
+            app:layout_constraintTop_toBottomOf="@+id/racelist_name" />
+
+        <TextView
+            android:id="@+id/racelist_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="Melbourne, Austrialia"
+            app:layout_constraintStart_toEndOf="@+id/racelist_racenumber"
+            app:layout_constraintTop_toBottomOf="@+id/racelist_circuit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
